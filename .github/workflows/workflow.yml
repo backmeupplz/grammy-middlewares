@@ -12,6 +12,6 @@ jobs:
       - name: Install modules
         run: yarn
       - name: Compile code
-        run: yarn tsc --skipLibCheck
+        run: yarn build-ts
       - name: Lint code
         run: yarn lint
