@@ -5,4 +5,4 @@ function getSessionKey(ctx: Context) {
   return ctx.chat?.id.toString()
 }
 
-export const sequentialize = baseSequentialize(getSessionKey)
+export const sequentialize = () => baseSequentialize(getSessionKey)
