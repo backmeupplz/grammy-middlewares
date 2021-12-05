@@ -15,7 +15,9 @@
   "scripts": {
     "build-ts": "tsc --skipLibCheck",
     "pretty": "prettier --check src",
-    "lint": "yarn pretty && eslint --max-warnings 0 --ext ts,json src"
+    "lint": "yarn pretty && eslint --max-warnings 0 --ext ts,json src",
+    "release": "yarn np",
+    "prerelease": "yarn build-ts"
   },
   "dependencies": {
     "@grammyjs/runner": "^1.0.3",
