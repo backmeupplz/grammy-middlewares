@@ -13,7 +13,7 @@
     "contents": "dist"
   },
   "scripts": {
-    "build-ts": "tsc --skipLibCheck",
+    "build-ts": "tsc --skipLibCheck && cp package.json dist/package.json",
     "pretty": "prettier --check src",
     "lint": "yarn pretty && eslint --max-warnings 0 --ext ts,json src",
     "release": "yarn np",
@@ -36,7 +36,6 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-sort-imports-es6-autofix": "^0.6.0",
     "module-alias": "^2.2.2",
-    "np": "^7.6.0",
     "prettier": "^2.5.1",
     "source-map-support": "^0.5.21",
     "tsc-watch": "^4.5.0",
