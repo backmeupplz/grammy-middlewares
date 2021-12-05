@@ -1,30 +1,30 @@
 {
-  "name": "telegram-bot-starter",
+  "name": "grammy-middlewares",
   "version": "1.0.0",
-  "description": "Telegram bot starter based on grammY",
-  "main": "dist/app.js",
-  "repository": "https://github.com/Borodutch/telegram-bot-template",
+  "description": "Set of useful middlewares for grammY",
+  "main": "dist/index.js",
+  "repository": "https://github.com/backmeupplz/grammy-middlewares",
   "author": "backmeupplz <backmeupplz@gmail.com>",
   "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "np": {
+    "contents": "dist"
+  },
   "scripts": {
-    "distribute": "yarn build-ts && node dist/app.js",
-    "develop": "tsc-watch --skipLibCheck --onSuccess 'node dist/app.js'",
     "build-ts": "tsc --skipLibCheck",
     "pretty": "prettier --check src",
-    "lint": "yarn pretty && eslint --max-warnings 0 --ext ts,tsx,json src"
+    "lint": "yarn pretty && eslint --max-warnings 0 --ext ts,json src",
+    "release": "yarn np",
+    "prerelease": "yarn build-ts"
   },
   "dependencies": {
-    "@grammyjs/i18n": "^0.5.0",
     "@grammyjs/runner": "^1.0.3",
-    "dotenv": "^10.0.0",
     "envalid": "^7.2.2",
-    "grammy": "^1.4.3",
-    "mongoose": "^6.0.14",
-    "mongoose-findorcreate": "^3.0.0"
+    "grammy": "^1.4.3"
   },
   "devDependencies": {
-    "@typegoose/typegoose": "^9.2.0",
-    "@types/js-yaml": "^4.0.5",
     "@types/node": "^16.11.11",
     "@typescript-eslint/eslint-plugin": "^5.5.0",
     "@typescript-eslint/parser": "^5.5.0",
@@ -36,6 +36,7 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-sort-imports-es6-autofix": "^0.6.0",
     "module-alias": "^2.2.2",
+    "np": "^7.6.0",
     "prettier": "^2.5.1",
     "source-map-support": "^0.5.21",
     "tsc-watch": "^4.5.0",
