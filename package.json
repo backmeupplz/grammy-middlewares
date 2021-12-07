@@ -1,6 +1,6 @@
 {
   "name": "grammy-middlewares",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Set of useful middlewares for grammY",
   "main": "dist/index.js",
   "repository": "https://github.com/backmeupplz/grammy-middlewares",
