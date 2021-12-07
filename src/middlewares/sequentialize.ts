@@ -1,8 +1,9 @@
 import { Context } from 'grammy'
 import { sequentialize as baseSequentialize } from '@grammyjs/runner'
 
-function getSessionKey(ctx: Context) {
+const getSessionKey = <T extends Context>(ctx: T) => {
   return ctx.chat?.id.toString()
 }
 
-export const sequentialize = () => baseSequentialize(getSessionKey)
+export const sequentialize = <T extends Context>() =>
+  baseSequentialize<T>(getSessionKey)

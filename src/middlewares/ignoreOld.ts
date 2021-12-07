@@ -1,8 +1,8 @@
 import { Context, NextFunction } from 'grammy'
 
 export const ignoreOld =
-  (threshold = 5 * 60) =>
-  (ctx: Context, next: NextFunction) => {
+  <T extends Context>(threshold = 5 * 60) =>
+  (ctx: T, next: NextFunction) => {
     if (
       ctx.msg?.date &&
       new Date().getTime() / 1000 - ctx.msg.date > threshold

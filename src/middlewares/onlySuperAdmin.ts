@@ -1,7 +1,8 @@
 import { Context, NextFunction } from 'grammy'
 
 export const onlySuperAdmin =
-  (superAdminId: number) => (ctx: Context, next: NextFunction) => {
+  <T extends Context>(superAdminId: number) =>
+  (ctx: T, next: NextFunction) => {
     if (ctx.from?.id !== superAdminId) {
       return
     }
