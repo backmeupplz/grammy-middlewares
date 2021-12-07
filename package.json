@@ -20,9 +20,9 @@
     "prerelease": "yarn build-ts"
   },
   "dependencies": {
-    "@grammyjs/runner": "^1.0.3",
-    "envalid": "^7.2.2",
-    "grammy": "^1.5.0"
+    "@grammyjs/runner": "^1",
+    "envalid": "^7",
+    "grammy": "^1"
   },
   "devDependencies": {
     "@types/node": "^16.11.12",
