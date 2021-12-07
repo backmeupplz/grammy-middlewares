@@ -34,6 +34,16 @@ bot.use(
   onlySuperAdmin(env.SUPER_ADMIN_ID),
   sequentialize()
 )
+
+<...>
+
+menu.text(
+  'Only menu creator',
+  onlyMenuAuthor(ctx =>
+    ctx.reply('Only menu creator can do this')
+  ),
+  ctx => ...
+)
 ```
 
 ## Middlewares
@@ -57,6 +67,10 @@ Checks if the user is a super admin. You have to provide the super admin id.
 ### `sequentialize`
 
 The basic [sequentialize](https://grammy.dev/advanced/scaling.html#concurrency-is-hard) middleware that takes the chat id as a sequential identifier.
+
+### `onlyMenuAuthor`
+
+[@grammyjs/menu](https://github.com/grammyjs/menu) middleware that checks if the user sending the callback is the menu author. To use it the menu has to reply to the menu caller.
 
 ## Development
 
