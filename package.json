@@ -22,7 +22,7 @@
   "dependencies": {
     "@grammyjs/runner": "^1",
     "envalid": "^7",
-    "grammy": "^1"
+    "grammy": "1.7.0"
   },
   "devDependencies": {
     "@types/node": "^17.0.18",

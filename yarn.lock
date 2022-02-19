@@ -779,7 +779,7 @@ globby@^11.0.4:
     merge2 "^1.4.1"
     slash "^3.0.0"
 
-grammy@^1:
+grammy@1.7.0:
   version "1.7.0"
   resolved "https://registry.yarnpkg.com/grammy/-/grammy-1.7.0.tgz#68998ee9e3ddfad8e9b580c96be1bffc6084758f"
   integrity sha512-Xs4vRzCkSO+8CrFP8BXXOo4BGfBGWTPoDcbj8V3kz/c01XLNXI738HWv6/qjQ+IuPLnd/Qegjy7MBogbymogUg==
