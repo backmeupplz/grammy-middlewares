@@ -1,4 +1,4 @@
-import 'source-map-support/register'
+import('source-map-support/register').catch(() => {})
 
 export * from './middlewares/ignoreOld'
 export * from './middlewares/onlyAdmin'
